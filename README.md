@@ -8,11 +8,6 @@ I’m exploring Vulkan, a modern graphics and compute API, to understand how to 
 
 ## 🛠️ Current Progress
 
-### Setup Script
-
-- **Date:** [Oct 22, 2024]
-- **Details:** I created a setup script that initializes the Vulkan environment, including instance creation and setup for the graphics pipeline. This script lays the groundwork for subsequent rendering tasks.
-
 ### Triangle Rendering Script
 
 - **Date:** [Oct 26, 2024]
@@ -20,6 +15,11 @@ I’m exploring Vulkan, a modern graphics and compute API, to understand how to 
   - Creating a vertex buffer
   - Setting up shaders
   - Basic command buffer management
+
+### Setup Script
+
+- **Date:** [Oct 22, 2024]
+- **Details:** I created a setup script that initializes the Vulkan environment, including instance creation and setup for the graphics pipeline. This script lays the groundwork for subsequent rendering tasks.
 
 ### Challenges Faced
 
