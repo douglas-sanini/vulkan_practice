@@ -17,7 +17,8 @@ class HelloTriangleApplication{
         }
 
     private:
-    GLFWwindow* window;
+        GLFWwindow* window{nullptr};
+
         void initWindow() {
             glfwInit();
 
@@ -25,7 +26,6 @@ class HelloTriangleApplication{
             glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
             window = glfwCreateWindow(WIDTH, HEIGHT, "Vulkan", nullptr, nullptr);
-
             }
 
         void initVulkan() {
@@ -33,11 +33,15 @@ class HelloTriangleApplication{
         }
 
         void mainLoop() {
-
+            while (!glfwWindowShouldClose(window)) {
+                glfwPollEvents();
+            }
         }
 
         void cleanup() {
+            glfwDestroyWindow(window);
 
+            glfwTerminate();
         }
 };
 
@@ -52,5 +56,5 @@ int main() {
         return EXIT_FAILURE;
     }
 
-    return EXIT_SUCCESS
+    return EXIT_SUCCESS;
 }
